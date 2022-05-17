@@ -1,3 +1,5 @@
+<?php 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +54,7 @@
         <div class="carousel-txt main-spacing">
           <div class="au-text-sec f-column center cover">
             <div class="texts-catch center f-column">
-              <div class="main-title clr-white" id="tit-sec0">IKAKO</div>
+              <div class="main-title clr-white" id="tit-sec0"><?php echo 'iakako'?></div>
               <div class="section-subtitle clr-white" id="subtit-sec0">A generic name that i've stoled from dribbble</div>
             </div>
             <div class="link-parent">
