@@ -1,4 +1,5 @@
 <?php 
+require '../assets/php/connect.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,8 +55,8 @@
         <div class="carousel-txt main-spacing">
           <div class="au-text-sec f-column center cover">
             <div class="texts-catch center f-column">
-              <div class="main-title clr-white" id="tit-sec0"><?php echo 'iakako'?></div>
-              <div class="section-subtitle clr-white" id="subtit-sec0">A generic name that i've stoled from dribbble</div>
+              <div class="main-title clr-white" id="tit-sec0"><?php echo $main_title?></div>
+              <div class="section-subtitle clr-white" id="subtit-sec0"><?php echo $sub_title ?></div>
             </div>
             <div class="link-parent">
               <button class="signin-btn clr-white carousel-btn pointer">Talk to Us</button>
@@ -68,11 +69,9 @@
         <div id="aboutus-sec" class="main-spacing center cover between">
           <div class="about-parent">
             <div class="text-sec f-column">
-              <div class="section-title" id="tit-sec1">ABOUT US.</div>
-              <div class="section-subtitle" id="subtit-sec1">A little bit about our company</div>
-              <div class="section-innertxt" id="inntxt-sec1">An About Us page helps your company make a good first impression, and is
-                critical for building customer trust and loyalty. An About Us page should make sure to cover basic
-                information.</div>
+              <div class="section-title" id="tit-sec1"><?php echo $main_title_two?></div>
+              <div class="section-subtitle" id="subtit-sec1"><?php echo $sub_title_two?></div>
+              <div class="section-innertxt" id="inntxt-sec1"><?php echo $inner_text_two?></div>
             </div>
             <div class="link-parent">
               <button class="signin-btn clr-white pointer">Sign up</button>
@@ -91,8 +90,8 @@
           <div class="projects-parent cover center">
             <div class="au-text-sec f-column center cover">
               <div class="texts-catch center f-column">
-                <div class="section-title">OUR CLIENTS.</div>
-                <div class="section-subtitle">Some of our biggest clients</div>
+                <div class="section-title"><?php echo $main_title_three?></div>
+                <div class="section-subtitle"><?php echo $sub_title_three?></div>
               </div>
               <div class="clients-base w-100 center">
                 <div class="clients">
@@ -122,11 +121,11 @@
 
       <div id="sec-3" class="sections-parent cover center backgrounds">
         <div id="projects-sec" class="main-spacing center cover">
-          <div class="projects-parent cover center">
+          <div class="projects-parent cover center">  
             <div class="au-text-sec f-column center cover">
               <div class="texts-catch center f-column">
-                <div class="section-title">OUR PROJECTS.</div>
-                <div class="section-subtitle">Our well known projects</div>
+                <div class="section-title"><?php echo $main_title_four?></div>
+                <div class="section-subtitle"><?php echo $sub_title_four?></div>
               </div>
               <div class="projects-base w-100 center relative">
                 <div class="slider cover">
@@ -150,7 +149,7 @@
                   </div>
                 </div>
               </div>
-              <div class="desk-tip">Desktop tip, hit SHIFT and scroll down with the mouse to navigate</div>
+              <div class="desk-tip"><?php echo $inner_text_four?></div>
             </div>
           </div>
         </div>

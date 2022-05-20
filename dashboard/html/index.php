@@ -1,3 +1,7 @@
+<?php
+require '../../assets/php/connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -120,21 +124,23 @@
         <div class="main-content cover center f-column">
 
           <div class="mod-section">
-            <div class="mod-title">Modify brand:</div>
+            <div class="mod-title"><?php echo $main_title?></div>
             <div class="mod-form-par text-mod">
-              <form action="" class="mod-form">
-                <input type="text" name="" id="">
-                <button type="submit">Change</button>
+              <form action="../../assets/php/update.php" method="get" class="mod-form">
+                <input type="text" name="main-title_input" id="main-title_input">
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+                <button type="submit">enviar</button>
               </form>
             </div>
           </div>
 
           <div class="mod-section">
-            <div class="mod-title">Modify text:</div>
+            <div class="mod-title"><?php echo $main_title_two?></div>
             <div class="mod-form-par text-mod">
-              <form action="" class="mod-form">
-                <input type="text" name="" id="">
-                <button type="submit">Change</button>
+              <form action="../../assets/php/update.php" method="get" class="mod-form">
+                <input type="text" name="main-title_two" id="main-title_two">
+                <input type="hidden" name="id_2" value="<?php echo $id_2 ?>">
+                <button type="submit">enviar</button>
               </form>
             </div>
           </div>
