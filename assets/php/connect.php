@@ -48,9 +48,18 @@ $sub_title_three = $result[2]['sub-title'];
 $inner_text_three = $result[2]['inner-text'] ; 
 
 $idImg_Section_1 = $result[0]['id'];
+$idImg2_Section_1 = $result[0]['id'];
+$idImg3_Section_1 = $result[0]['id'];
+$idImg4_Section_1 = $result[0]['id'];
+
 $idImg_Section_2 = $result[1]['id'];
+
 $idImg_Section_3 = $result[2]['id'];
+
 $idImg_Section_4 = $result[3]['id'];
+$idImg2_Section_4 = $result[3]['id'];
+$idImg3_Section_4 = $result[3]['id'];
+$idImg4_Section_4 = $result[3]['id'];
 
 //SECTION 3
 

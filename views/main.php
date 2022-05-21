@@ -33,8 +33,8 @@ require '../assets/php/connect2.php';
             </div>
           </div>
           <div class="navbar-itens-par sign-par flex">
-            <div class="navbar-itens"><a href="#" class="nav-links signin">Sign In</a></div>
-            <div class="navbar-itens"><a href="#" class="nav-links signup clr-white">Sign Up</a></div>
+            <div class="navbar-itens"><a href="#" class="signin">Sign In</a></div>
+            <div class="navbar-itens"><a href="#" class="signup clr-white">Sign Up</a></div>
           </div>
         </div>
       </nav>
@@ -44,10 +44,10 @@ require '../assets/php/connect2.php';
             <div class="slider-inner flex carousel-inner cover">
               <div class="carousel center">
                 <div class="container flex" id="img">
-                  <img src="<?php echo $img1_section_1?>" alt="" class="imgs cover" id="imgcar1-sec0">
-                  <img src="../assets/img/logos,assets,etc/carousel/bg-2.jpg" alt="" class="imgs cover" id="imgcar2-sec0">
-                  <img src="../assets/img/logos,assets,etc/carousel/bg-3.jpg" alt="" class="imgs cover" id="imgcar3-sec0">
-                  <img src="../assets/img/logos,assets,etc/carousel/bg-4.jpg" alt="" class="imgs cover" id="imgcar4-sec0">
+                  <img src="<?php echo $img1_section_1?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
+                  <img src="<?php echo $img2_section_1?>" alt="" class="imgs cover obj-cover" id="imgcar2-sec0">
+                  <img src="<?php echo $img3_section_1?>" alt="" class="imgs cover obj-cover" id="imgcar3-sec0">
+                  <img src="<?php echo $img4_section_1?>" alt="" class="imgs cover obj-cover" id="imgcar4-sec0">
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ require '../assets/php/connect2.php';
           </div>
           <div class="about-parent-alt">
             <div class="about-img">
-              <img src="<?php echo $img1_section_2?>" alt="" class="about-us cover" id="img-sec1">
+              <img src="<?php echo $img1_section_2?>" alt="" class="about-us cover obj-cover" id="img-sec1">
             </div>
           </div>
         </div>
@@ -132,20 +132,20 @@ require '../assets/php/connect2.php';
                 <div class="slider cover">
                   <div class="slider-inner projects-inner flex cover center">
                     <div class="projects cover center">
-                      <div class="projects-bg cover"><img src="../assets/img/logos,assets,etc/carousel/bg-1.jpg" alt=""
-                          class="cover"></div>
+                      <div class="projects-bg cover"><img src="<?php echo $img1_section_4?>" alt=""
+                          class="cover obj-cover"></div>
                     </div>
                     <div class="projects cover center">
-                      <div class="projects-bg cover"><img src="../assets/img/logos,assets,etc/carousel/bg-2.jpg" alt=""
-                          class="cover"></div>
+                      <div class="projects-bg cover"><img src="<?php echo $img2_section_4?>" alt=""
+                          class="cover obj-cover"></div>
                     </div>
                     <div id="3" class="projects cover center">
-                      <div class="projects-bg cover"><img src="../assets/img/logos,assets,etc/carousel/bg-3.jpg" alt=""
-                          class="cover"></div>
+                      <div class="projects-bg cover"><img src="<?php echo $img3_section_4?>" alt=""
+                          class="cover obj-cover"></div>
                     </div>
                     <div class="projects cover center">
-                      <div class="projects-bg cover"><img src="../assets/img/logos,assets,etc/carousel/bg-4.jpg" alt=""
-                          class="cover"></div>
+                      <div class="projects-bg cover"><img src="<?php echo $img4_section_4?>" alt=""
+                          class="cover obj-cover"></div>
                     </div>
                   </div>
                 </div>

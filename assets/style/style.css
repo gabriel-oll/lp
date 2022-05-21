@@ -1,444 +1,474 @@
 /*imports*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*/imports*/
 
+
 /*global*/
+
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
+
 
 /*/global*/
 
+
 /*global assets*/
+
+.nav-base_opc {
+    background-color: #1212;
+}
+
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .f-column {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .cover {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .w-100 {
-  width: 100%;
+    width: 100%;
 }
 
 .w-100vw {
-  width: 100vw;
+    width: 100vw;
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .relative {
-  position: relative;
+    position: relative;
 }
 
 .main-spacing {
-  width: calc(100% - 80px);
+    width: calc(100% - 80px);
 }
 
 .clr-white {
-  color: #f8f8ff !important;
+    color: #f8f8ff !important;
 }
 
 .pointer:hover {
-  cursor: pointer;
-  filter: brightness(0.95);
+    cursor: pointer;
+    filter: brightness(0.95);
 }
 
+.obj-cover {
+    object-fit: cover
+}
+
+
 /*/global assets*/
+
 
 /*nav e footer*/
 
 .navbar-base {
-  height: 75px;
-  position: fixed;
+    height: 75px;
+    position: fixed;
 }
 
 .navbar-itens-par,
 .footer-itens-par,
 .footer-parent,
 .form-email {
-  gap: 15px;
+    gap: 15px;
 }
 
 .navbar-itens-par {
-  left: 54px;
+    left: 54px;
 }
 
 .footer-parent {
-  height: 100px;
-  background-color: #121212;
+    height: 100px;
+    background-color: #121212;
 }
 
 .copy {
-  opacity: 80%;
-  font-size: 14px;
+    opacity: 80%;
+    font-size: 14px;
 }
 
 .navbar-base {
-  z-index: 3;
-  justify-content: end;
+    z-index: 3;
+    justify-content: end;
 }
 
 .navbar-parent {
-  justify-content: space-between;
-  margin: 0px 20px
+    justify-content: space-between;
+    margin: 0px 20px
 }
 
 .navbar-parent-mb {
-  display: none;
+    display: none;
 }
 
-.nav-links {
-  text-decoration: none;
-  color: #121212;
-  font-weight: 700;
-  font-size: 1.2vw;
+.nav-links,
+.signup,
+.signin {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.2vw;
 }
 
 .navbar-item {
-  height: 30px;
-  width: 30px;
+    height: 30px;
+    width: 30px;
 }
 
 .signin {
-  color: #FFC857;
+    color: #FFC857;
 }
 
 .signup {
-  border-radius: 3px;
-  background-color: #121212;
-  padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #121212;
+    padding: 5px 10px;
 }
 
 .dot {
-  height: 5px;
+    height: 5px;
 }
 
 .dot-hover {
-  background-color: #FFC857;
-  width: 5px;
-  border-radius: 15px;
+    background-color: #FFC857;
+    width: 5px;
+    border-radius: 15px;
 }
 
 .dot-active {
-  background-color: #FFC857;
-  height: 5px;
-  width: 100%;
-  border-radius: 15px;
-  transition: 0.3s;
+    background-color: #FFC857;
+    height: 5px;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
 }
+
 
 /*/nav*/
 
+
 /*sections*/
+
 .main-content {
-  height: 100vh;
+    height: 100vh;
 }
 
 .form-sec {
-  height: 30vh;
-  background-color: #2E4052;
+    height: 30vh;
+    background-color: #2E4052;
 }
 
 .backgrounds {
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 #sec-1 {
-  background: url();
+    background: url();
 }
 
 #sec-2 {
-  background: url(../img/backgrounds/bg-mtn.jpg)
+    background: url(../img/backgrounds/bg-mtn.jpg)
 }
 
 #sec-3 {
-  background: url(../img/backgrounds/bg-mtn2.jpg);
+    background: url(../img/backgrounds/bg-mtn2.jpg);
 }
 
-
 .section-title {
-  color: #121212;
-  font-weight: 700;
-  font-size: 3vw;
+    color: #121212;
+    font-weight: 700;
+    font-size: 3vw;
 }
 
 .section-subtitle {
-  font-size: 2vw;
-  font-weight: 600;
-  color: #121212;
-  opacity: 80%;
+    font-size: 2vw;
+    font-weight: 600;
+    color: #121212;
+    opacity: 80%;
 }
 
 .section-innertxt {
-  font-size: 1.5vw;
-  font-weight: 500;
-  opacity: 65%;
-  padding: 10px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    opacity: 65%;
+    padding: 10px;
 }
 
 .main-title {
-  font-size: 12vw;
-  font-weight: 700;
+    font-size: 12vw;
+    font-weight: 700;
 }
 
 .desk-tip {
-  font-size: 8px;
+    font-size: 8px;
 }
 
-/*/sections*/
 
+/*/sections*/
 
 
 /*about-us*/
 
 .about-parent {
-  width: 400px;
+    width: 400px;
 }
 
 .about-img {
-  height: 34vw;
-
+    height: 34vw;
 }
 
 .au-text-sec,
 .gap20 {
-  gap: 20px;
+    gap: 20px;
 }
+
 
 /*/about-us*/
 
+
 /*clients*/
+
 .clients-base {
-  justify-content: space-evenly;
-  max-width: 60%;
+    justify-content: space-evenly;
+    max-width: 60%;
 }
 
 .clients {
-  height: 40px;
+    height: 40px;
 }
 
+
 /*/clients*/
+
 
 /*projects*/
 
 .projects-base {
-  height: 200px;
-  background-color: #272727;
-  border-radius: 5px;
+    height: 200px;
+    background-color: #272727;
+    border-radius: 5px;
 }
 
 .projects-inner {
-  width: calc(250px * 4 + 200px) !important;
+    width: calc(250px * 4 + 200px) !important;
 }
 
 .projects {
-  height: 160px;
-  width: 250px;
-  background-color: #f8f8ff;
-  border-radius: 5px;
-  padding: 5px;
+    height: 160px;
+    width: 250px;
+    background-color: #f8f8ff;
+    border-radius: 5px;
+    padding: 5px;
 }
 
+
 /*/projects*/
+
 
 /*slider*/
 
 .slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: scroll;
-  scrollbar-width: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
-  all: unset;
-  width: 0px;
-  height: 0px;
+    all: unset;
+    width: 0px;
+    height: 0px;
 }
 
 .slider-inner {
-  position: absolute;
-  justify-content: space-evenly;
-  width: 500%;
+    position: absolute;
+    justify-content: space-evenly;
+    width: 500%;
 }
+
 
 /*/slider*/
 
+
 /*carousel*/
+
 .carousel-parent {
-  background: url();
+    background: url();
 }
 
 .carousel {
-  overflow: hidden;
-  height: 100%;
-  width: 100vw;
-  z-index: 1;
-  background-color: #2E4052;
+    overflow: hidden;
+    height: 100%;
+    width: 100vw;
+    z-index: 1;
+    background-color: #2E4052;
 }
 
 .carousel-txt {
-  position: absolute;
-  z-index: 2;
-  height: 400px;
+    position: absolute;
+    z-index: 2;
+    height: 400px;
 }
 
 .container {
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-  filter: brightness(0.3);
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    filter: brightness(0.3);
 }
 
 .carousel-btn {
-  background-color: #FFC857 !important;
+    background-color: #FFC857 !important;
 }
 
 .imgs {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .carousel-inner {
-  width: 100vw;
+    width: 100vw;
 }
+
 
 /*/carousel*/
 
+
 /*form*/
+
 .form-btn,
 .signin-btn {
-  background-color: #336699;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: 600;
+    background-color: #336699;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
 .email-input {
-  border: none;
-  outline: none;
-  padding: 10px;
-  border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
 }
+
 
 /*/form*/
 
+
 /*return-btn*/
+
 .return-btn {
-  position: fixed;
-  height: 4 0px;
-  width: 40px;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1;
-  border-radius: 46px;
-  opacity: 50%;
+    position: fixed;
+    height: 4 0px;
+    width: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 46px;
+    opacity: 50%;
 }
+
+
 /*/return-btn*/
 
+
 /*medias*/
+
 @media screen and (min-width: 1170px) {
-  .projects-inner {
-    width: 100% !important;
-  }
+    .projects-inner {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-  .clients-base {
-    max-width: 100%;
-  }
+    .clients-base {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 770px) {
-  .nav-itens {
-    left: 0px;
-  }
-  .nav-links {
-    font-size: 12px;
-  }
-  .sign-par {
-    display: none;
-  }
-
-  .about-img {
-    height: unset;
-  }
-
-  .about-parent {
-    width: 300px
-  }
-
-  .about-us {
-    transform: scale(98%);
-  }
+    .nav-itens {
+        left: 0px;
+    }
+    .nav-links {
+        font-size: 12px;
+    }
+    .sign-par {
+        display: none;
+    }
+    .about-img {
+        height: unset;
+    }
+    .about-parent {
+        width: 300px
+    }
+    .about-us {
+        transform: scale(98%);
+    }
 }
 
 @media screen and (max-width: 680px) {
-  .main-spacing {
-    width: calc(100% - 20px);
-  }
-
-  #aboutus-sec {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .section-innertxt,
-  .email-label {
-    font-size: 12px;
-  }
-
-  .section-subtitle {
-    font-size: 16px;
-  }
-
-  .section-title {
-    font-size: 26px;
-  }
-  .about-us {
-    transform: scale(86%);
-  }
+    .main-spacing {
+        width: calc(100% - 20px);
+    }
+    #aboutus-sec {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .section-innertxt,
+    .email-label {
+        font-size: 12px;
+    }
+    .section-subtitle {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+    .about-us {
+        transform: scale(86%);
+    }
 }
 
 @media screen and (max-width: 380px) {
-  .section-innertxt {
-    font-size: 10px;
-    padding: 10px 5px;
-  }
-
-  .section-subtitle {
-    font-size: 14px;
-  }
-
-  .section-title {
-    font-size: 24px;
-  }
-
-  .about-parent {
-    width: 260px
-  }
+    .section-innertxt {
+        font-size: 10px;
+        padding: 10px 5px;
+    }
+    .section-subtitle {
+        font-size: 14px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .about-parent {
+        width: 260px
+    }
 }
+
 
 /*/medias*/
