@@ -1,5 +1,6 @@
 <?php 
-require '../assets/php/connect.php'
+require '../assets/php/connect.php';
+require '../assets/php/connect2.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +44,7 @@ require '../assets/php/connect.php'
             <div class="slider-inner flex carousel-inner cover">
               <div class="carousel center">
                 <div class="container flex" id="img">
-                  <img src="../assets/img/logos,assets,etc/carousel/bg-1.jpg" alt="" class="imgs cover" id="imgcar1-sec0">
+                  <img src="<?php echo $img1_section_1?>" alt="" class="imgs cover" id="imgcar1-sec0">
                   <img src="../assets/img/logos,assets,etc/carousel/bg-2.jpg" alt="" class="imgs cover" id="imgcar2-sec0">
                   <img src="../assets/img/logos,assets,etc/carousel/bg-3.jpg" alt="" class="imgs cover" id="imgcar3-sec0">
                   <img src="../assets/img/logos,assets,etc/carousel/bg-4.jpg" alt="" class="imgs cover" id="imgcar4-sec0">
@@ -79,7 +80,7 @@ require '../assets/php/connect.php'
           </div>
           <div class="about-parent-alt">
             <div class="about-img">
-              <img src="../assets/img/logos,assets,etc/aboutus-example.jpg" alt="" class="about-us cover" id="img-sec1">
+              <img src="<?php echo $img1_section_2?>" alt="" class="about-us cover" id="img-sec1">
             </div>
           </div>
         </div>
