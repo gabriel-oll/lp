@@ -68,20 +68,3 @@ $(window).on('scroll', function() {
 
     }
 });
-
-// var lastScrollTop = 0;
-// $(window).scroll(function(event) {
-
-//     var st = $(this).scrollTop();
-
-//     if (st > lastScrollTop) {
-//         $('.nav-links').removeClass('clr-white');
-//         // downscroll code
-//     } else {
-//         $('.nav-links').addClass('clr-white');
-//         // upscroll code
-//     }
-
-//     lastScrollTop = st;
-
-// });

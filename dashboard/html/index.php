@@ -1,5 +1,8 @@
 <?php
 require '../../assets/php/connect.php';
+require '../../assets/php/connect2.php';
+// require '../../assets/php/img.php';
+// require '../../assets/php/update.php';
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +95,7 @@ require '../../assets/php/connect.php';
     </nav>
     <div class="main-content cover center f-column">
 
-      <div class="mod-section_section-1 mod-section-parent cover center f-column b-shadow" id="mod-sec1">
+      <div class="mod-section_section-1 mod-section-parent cover center f-column b-shadow gap-20" id="mod-sec1">
 
         <div class="mod-section cover">
           <div class="mod-title"><?php echo $main_title ?></div>
@@ -114,50 +117,70 @@ require '../../assets/php/connect.php';
             </form>
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_1--section-1' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg_Section_1" value="<?php echo $idImg_Section_1 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex center cover gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_1--section-1' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg_Section_1" value="<?php echo $idImg_Section_1 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img1_section_1 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_2--section-1' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg2_Section_1" value="<?php echo $idImg2_Section_1 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex center cover gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_2--section-1' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg2_Section_1" value="<?php echo $idImg2_Section_1 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img2_section_1 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_3--section-1' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg3_Section_1" value="<?php echo $idImg3_Section_1 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex cover center gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_3--section-1' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg3_Section_1" value="<?php echo $idImg3_Section_1 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img3_section_1 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_4--section-1' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg4_Section_1" value="<?php echo $idImg4_Section_1 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex cover center gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_4--section-1' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg4_Section_1" value="<?php echo $idImg4_Section_1 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img4_section_1 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
 
       </div>
 
-      <div class="mod-section_section-2 mod-section-parent cover center f-column b-shadow" id="mod-sec2">
+      <div class="mod-section_section-2 mod-section-parent cover center f-column b-shadow gap-20" id="mod-sec2">
 
         <div class="mod-section cover">
           <div class="mod-title"><?php echo $main_title_two ?></div>
@@ -189,14 +212,19 @@ require '../../assets/php/connect.php';
             </form>
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg_Section_2" value="<?php echo $idImg_Section_2 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex center cover gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg_Section_2" value="<?php echo $idImg_Section_2 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img1_section_2 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
 
@@ -227,7 +255,7 @@ require '../../assets/php/connect.php';
 
       </div>
 
-      <div class="mod-section_section-4 mod-section-parent cover center f-column b-shadow" id="mod-sec4">
+      <div class="mod-section_section-4 mod-section-parent cover center f-column b-shadow gap-20" id="mod-sec4">
 
         <div class="mod-section cover">
           <div class="mod-title"><?php echo $main_title_four ?></div>
@@ -259,47 +287,66 @@ require '../../assets/php/connect.php';
             </form>
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_1--section-4' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg1_Section_4" value="<?php echo $idImg1_Section_4 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex cover center gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_1--section-4' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg1_Section_4" value="<?php echo $idImg1_Section_4 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img1_section_4 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_2--section-4' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg2_Section_4" value="<?php echo $idImg2_Section_4 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex cover center gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_2--section-4' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg2_Section_4" value="<?php echo $idImg2_Section_4 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img2_section_4 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_3--section-4' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg3_Section_4" value="<?php echo $idImg3_Section_4 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex cover center gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_3--section-4' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg3_Section_4" value="<?php echo $idImg3_Section_4 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img3_section_4 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
-        <div class="mod-section cover">
-          <div class="mod-title"><?php echo 'img_4--section-4' ?></div>
-          <div class="mod-form-par text-mod">
-            <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
-              <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
-              <input type="hidden" name="idImg4_Section_4" value="<?php echo $idImg4_Section_4 ?> ">
-              <button type="submit" class="mod-btn b-shadow ">Enviar</button>
-            </form>
+        <div class="flex cover center gap-20">
+          <div class="mod-section cover">
+            <div class="mod-title"><?php echo 'img_4--section-4' ?></div>
+            <div class="mod-form-par text-mod">
+              <form action="../../assets/php/img.php" method="post" class="mod-form flex" enctype="multipart/form-data">
+                <input class="img-input cover b-shadow" type="file" name="arquivo" id="arquivo">
+                <input type="hidden" name="idImg4_Section_4" value="<?php echo $idImg4_Section_4 ?> ">
+                <button type="submit" class="mod-btn b-shadow ">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <div class="mod-section-parent img-mod">
+            <img src="<?php echo '../' . $img4_section_4 ?>" alt="" class="imgs cover obj-cover" id="imgcar1-sec0">
           </div>
         </div>
-
       </div>
 
     </div>
