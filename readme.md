@@ -8,7 +8,7 @@
 
 # Execution
 
-##COMO SE CONECTAR AO BANCO DE DADOS
+## COMO SE CONECTAR AO BANCO DE DADOS:
 
 Primeiramente, para rodar a aplicação você deve abrir seu administrador de banco de dados e criar um banco chamado 'lp-cms'.
 
